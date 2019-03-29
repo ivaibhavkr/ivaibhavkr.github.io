@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>iamvaibhavkr</title>
+  <style>
+    body{
+      background-color: #000000;  
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    #github-iframe {
+      position: fixed;
+      left: 32px;
+      top: 32px;
+    }
+
+    #area-render {
+      position: fixed;
+      width: 320px;
+      height: 160px;
+      right: 4px;
+      bottom: 4px;
+      border: dashed 1px #ccc;
+    }
+  </style>
+</head>
+<body>
+<!-- <div id="github-iframe"></div> -->
+
+<!-- <div id="area-render"></div> -->
+
+<script type="text/javascript" color="255,255,255" pointColor="255,0,0" opacity='0.7' zIndex="-2" count="300" src="dist/canvas-nest.js"></script>
+<script type="text/javascript" src="dist/canvas-nest.umd.js"></script>
+<script type="text/javascript">
+  var cn = new CanvasNest(document.getElementById('area-render'), {
+    color: '255,0,255',
+    count: 50,
+  });
+
+  // 下面为其他 js，无需关注
+  function asyncLoad() {
+    //async load github
+    var i = document.createElement("iframe");
+    i.src = "https://ghbtns.com/github-btn.html?user=hustcc&repo=canvas-nest.js&type=star&count=true";
+    i.scrolling = "no";
+    i.frameborder = "0";
+    i.border = "0";
+    i.setAttribute("frameborder", "0", 0);
+    i.width = "100px";
+    i.height = "20px";
+    document.getElementById("github-iframe").appendChild(i);
+  }
+  function loadGitHubBtn() {
+    if (window.addEventListener) {window.addEventListener("load", asyncLoad, false);}
+    else if (window.attachEvent) {window.attachEvent("onload", asyncLoad);}
+    else {window.onload = asyncLoad;}
+  }
+
+  loadGitHubBtn();
+
+  <div class="flex-col-c-sb size1 overlay1 p-l-75 p-r-75 p-t-20 p-b-40 p-lr-15-sm">
+    <!--  -->
+    <div class="w-full flex-w flex-sb-m">
+      <div class="wrappic1 m-r-30 m-t-10 m-b-10">
+        <a href="#"><img src="images/icons/logo.png" alt="LOGO"></a>
+      </div>
+
+      <div class="flex-w cd100 p-t-15 p-b-15 p-r-36">
+        <div class="flex-w flex-b m-r-22 m-t-8 m-b-8">
+          <span class="l1-txt1 wsize1 days">35</span>
+          <span class="m1-txt1 p-b-2">Days</span>
+        </div>
+
+        <div class="flex-w flex-b m-r-22 m-t-8 m-b-8">
+          <span class="l1-txt1 wsize1 hours">17</span>
+          <span class="m1-txt1 p-b-2">Hr</span>
+        </div>
+
+        <div class="flex-w flex-b m-r-22 m-t-8 m-b-8">
+          <span class="l1-txt1 wsize1 minutes">50</span>
+          <span class="m1-txt1 p-b-2">Min</span>
+        </div>
+
+        <div class="flex-w flex-b m-r-22 m-t-8 m-b-8">
+          <span class="l1-txt1 wsize1 seconds">39</span>
+          <span class="m1-txt1 p-b-2">Sec</span>
+        </div>
+      </div>
+
+      <div class="m-t-10 m-b-10">
+        <a href="mailto:kumvaibhav@yahoo.co.in?Subject=SignUp" class="size2 s1-txt1 flex-c-m how-btn1 trans-04" title="Sign up for newsletter!">
+          Sign Up
+        </a>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex-col-c-m p-l-15 p-r-15 p-t-80 p-b-90">
+      <h3 class="l1-txt2 txt-center p-b-55 respon1">
+        Coming Soon
+      </h3>
+
+      <!-- <div>
+        <button class="how-btn-play1 flex-c-m">
+          <a href="https://www.youtube.com/watch?v=HblwLcAR4r4"></a>
+          <i class="zmdi zmdi-play"></i>
+        </button>
+      </div> -->
+    </div>
+    
+    <div class="flex-sb-m flex-w w-full">
+      <!--  -->
+      <div class="flex-w flex-c-m m-t-10 m-b-10">
+        <a href="https://fb.com/ivaibhavkr" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+          <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="https://instagram.com/iamvaibhavkr" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+          <i class="fa fa-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com/ivaibhavkr" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+          <i class="fa fa-twitter"></i>
+        </a>
+
+        <a href="https://in.linkedin.com/in/iamvaibhavkr" target="_blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- <form class="contact100-form validate-form m-t-10 m-b-10" action="mailto:kumvaibhav@yahoo.co.in?Subject=Feedback">
+        <div class="wrap-input100 validate-input m-lr-auto-lg" data-validate = "Email is required: ex@abc.xyz">
+          <input class="s2-txt1 placeholder0 input100 trans-04" type="text" name="email" placeholder="Feedback">
+
+          <button class="flex-c-m ab-t-r size4 s1-txt1 hov1">
+            <i class="zmdi zmdi-long-arrow-right fs-16 cl1 trans-04"></i>
+          </button>
+        </div>    
+      </form> -->
+    </div>
+  </div>
+</script>
+</body>
+</html>
